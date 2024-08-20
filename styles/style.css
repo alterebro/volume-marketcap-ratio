@@ -1,0 +1,77 @@
+#vol-mcap-ratio {
+    border-left: solid rgba(255, 255, 255, 0.15) 1px;
+    box-shadow: -10px 0 10px 5px rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #0d0d0d;
+    padding: 20px 20px 10px 20px;
+    overflow: scroll;
+    opacity: 1;
+    transition:
+        opacity ease-in-out 0.35s,
+        right ease-in-out 0.35s;
+}
+#vol-mcap-ratio.hidden {
+    pointer-events: none;
+    opacity: 0;
+    right: -100px;
+}
+#vol-mcap-ratio-trigger {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: red;
+    border: solid #fff 1px;
+    border-radius: 5px;
+    background: #000;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+}
+#vol-mcap-ratio table caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+}
+#vol-mcap-ratio table th {
+    text-align: left;
+    padding: 5px 10px 5px 0;
+    font-weight: normal;
+    opacity: 0.5;
+}
+#vol-mcap-ratio table tr th:last-child {
+    padding: 5px 0;
+}
+#vol-mcap-ratio table th[data-sort] {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.sort-desc:after {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    font-size: 8px;
+    content: "\25bc";
+}
+.sort-asc:after {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    font-size: 8px;
+    content: "\25b2";
+}
+#vol-mcap-ratio table td {
+    padding: 5px 10px 5px 0;
+    border-top: solid rgba(255, 255, 255, 0.1) 1px;
+}
+#vol-mcap-ratio table tr td:last-child {
+    padding: 5px 0;
+}
+#vol-mcap-ratio table td a {
+    border-bottom: dotted rgba(255, 255, 255, 0.5) 1px;
+}
