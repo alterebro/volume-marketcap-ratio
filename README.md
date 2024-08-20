@@ -7,9 +7,9 @@ Chrome extension to add instant insights on market liquidity with volume to mark
 
 ## Installing Instructions
 
-- Download the extension.
+- Download the extension and extract the contents: https://github.com/alterebro/volume-marketcap-ratio/archive/refs/heads/main.zip
 - Navigate to `chrome://extensions/` on a chromium based web browser.
-- Look for the "Developer Mode" option & activate it.
-- Click the "Load unpacked" option.
+- Look for the _"Developer Mode"_ option & activate it.
+- Click the _"Load unpacked"_ option.
 - Select the folder containing the extension files.
 
