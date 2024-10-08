@@ -4,6 +4,7 @@ Chrome extension to add instant insights on market liquidity with volume to mark
 
 ![Volume to MarketCap Ratio on DexScreener Screenshot](images/screenshot.jpg)
 
+> Update: MarketCap to Holders ratio is also available on the token page via console.
 
 ## Installing Instructions
 
