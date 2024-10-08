@@ -92,10 +92,11 @@ let parsed_script_content = JSON.parse(script_content);
 
 const pairs = parsed_script_content.route.data.pairs;
 const has_pairs = !!pairs && pairs.length;
+let ratios = [];
 
 if ( has_pairs ) {
 
-	let ratios = pairs.map((item) => {
+	ratios = pairs.map((item) => {
 		let _hours = now - item.pairCreatedAt;
 		_hours = _hours / (1000 * 60 * 60);
 
