@@ -16,7 +16,9 @@ script_content = script_content
 	.replace(/undefined/g, "0")
 	.replace(/new URL\(\"/g, '"')
 	.replace(/new Date\(\"/g, '"')
-	.replace(/"\)/g, '"');
+	.replace(/"\)/g, '"')
+	.replace(/;+$/, '')
+	.trim();
 
 let parsed_script_content = JSON.parse(script_content);
 
